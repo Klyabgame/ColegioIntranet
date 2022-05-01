@@ -26,6 +26,7 @@ body{
 .header__nav-ul-lista a{
     text-decoration: none;
 }
+/*section*/
 
 .section{
     height: 1000px;
@@ -37,6 +38,31 @@ body{
     flex-direction: column;
     list-style: none;
 }
-.section__nav-ul-lista a{
+.a{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
     text-decoration: none;
+    
+
+}
+.a:hover{
+    background: red;
+    color: white;
+}
+.lista__submenu{
+    list-style: none;
+}
+.lista__submenu li a{
+    text-decoration: none;
+}
+
+/*MAIN*/
+.main{
+    width: 100%;
+    height: 1000px;
+    background: white;
+}
+.container_mid{
+    display: flex;
 }
