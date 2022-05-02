@@ -5,102 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/inicio.css">
+
     <title>Intranet Colegio</title>
 </head>
 <body>
-<!--     <div class="container">
-        <header class="header">
-            <nav class="header__nav">
-                <ul class="header__nav-ul">
-                    <li class="header__nav-ul-lista"> <a href="">inicio</a></li>
-                    <li class="header__nav-ul-lista"> <a href="">final</a></li>
-                    <li class="header__nav-ul-lista"> <a href="">salir</a></li>
-                    <li class="header__nav-ul-lista"> <a href="">estatus</a></li>
-                </ul>
-            </nav>
-        </header> -->
-        <div class="container_mid">
+        <div id="menulateral">
+
             
-            <div id="sidemenu" class="menu-collapsed">
-                <div id="header">
-                    <div id="title"> <span>INTRANET</span> </div>
-                    <div id="menu-btn">
-                        <div class="btn-hamburger"></div>
-                        <div class="btn-hamburger"></div>
-                        <div class="btn-hamburger"></div>
-                    </div>
-                </div>
-
-                <div id="profile">
-                    <div id="photo"> <img src="img/foto.jpg" alt=""> </div>
-                    <div id="name"><span>FRANZ SCHWARTZ, GAVINO CARRERA</span></div>
-                </div>
-
-                <div id="menu-items">
-                    <div class="item">
-                        <a href="">
-                            <div class="icon"> <img src="img/conf.jpg" alt=""></div>
-                            <div class="title"> <span>DATOS PERSONALES</span></div>
-                        </a>
-                    </div>
-                    <div class="item separator">
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="icon"> <img src="img/conf.jpg" alt=""></div>
-                            <div class="title"> <span>MATRICULA VIRTUAL</span></div>
-                        </a>
-                    </div>
-                    <div class="item separator">
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="icon"> <img src="img/conf.jpg" alt=""></div>
-                            <div class="title"> <span>CURSOS</span></div>
-                        </a>
-                    </div>
-                    <div class="item separator">
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="icon"> <img src="img/conf.jpg" alt=""></div>
-                            <div class="title"> <span>NOTAS</span></div>
-                        </a>
-                    </div>
-                    <div class="item separator">
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <div class="icon"> <img src="img/conf.jpg" alt=""></div>
-                            <div class="title"> <span>REGLAMENTO ACADEMICO</span></div>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-            <!-- <div id="main-container">
-                Hola a todos
-            </div> -->
-
-            <main class="main">
-        
-            </main>
         </div>
-        
-        <footer>
+        <main class="main">
+            <div class="main__inicio">
+                <h1 class="main__inicio-titulo">BIENVENIDOS A LA INTRANET DEL COLEGIO "I.E.P DOMINGO MANDAMIENTO SIPAN"</h1>
+                <img class="main__inicio-img" src="/img/mandamientocolegio.png" alt="">
+                <p class="main__inicio-p">Inicia su funcionamiento en el Ex-Instituto Nacional Educativo Nº 26 "Pedro Paulet" de Huacho.
+                    Al quedar excedentes profesores y alumnos mediante R.D.E. Nº 2522 del 24 de Noviembre del 1978 se hizo posible la creación del nuevo colegio que posteriormente se puso el nombre de "Domingo Mandamiento Sipán".
+                    Al año siguiente 1979 se trasladan y funcionan en ambientes alquilados de la calle José Olaya Nº 159 de Huacho.
+                    Posteriormente y en forma definitiva se instalan en el terreno de la ex-factoría de trenes Norte Oeste de Huacho, terreno de 22300 m. que dona el Ministro de transportes. 
+                    Se inicio la construcción de aulas y lozas deportivas.
+                    Apartir del año 1990 se crean especialidades técnicas.
+                    En el año de 1992 la escuela primaria Nº 20320 (Ex-Beteta) se integra al CETI iniciando su funcionamiento con 2 niveles educativas Primaria y Secundaria.</p>
+            </div>
+        </main>
+
+    <script src="js/enlacehtml.js"></script>
     
-        </footer>
-    </div>
-    <script>
-        const btn=document.querySelector('#menu-btn');
-        const menu= document.querySelector('#sidemenu');
-
-        btn.addEventListener('click', e=>{
-            menu.classList.toggle("menu-expanded");
-            menu.classList.toggle("menu-collapsed");
-
-            document.querySelector('body').classList.toggle('body-expanded');
-        })
-    </script>
 </body>
 </html>
