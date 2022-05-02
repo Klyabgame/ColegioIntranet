@@ -10,8 +10,9 @@
     align-items: center;
 }
 .main__inicio-titulo{
+    align-items: center;
     margin-top: 30px;
-    padding: 10px;
+    
     text-align: center;
     margin-bottom: 30px;
 }

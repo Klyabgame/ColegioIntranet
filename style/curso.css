@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.dato__ciclo{
+    width: 100%;
+    background: white;
+}
+.dato__ciclo-tb{
+    border-collapse: collapse;
+}
+th,td{
+    border: solid 1px black;
+    padding: 0;
+}
+
+.dato__cursos-matriculado{
+    margin-top: 30px;
+}
