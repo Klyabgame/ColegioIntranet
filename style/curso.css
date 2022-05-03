@@ -3,15 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+.titulo__inicial{
+    text-align: center;
+    margin-top: 20px;
+}
 .conteiner{
     width: 90%;
-    margin: 10px auto;
+    margin: 60px auto;
+    background: white;
+    border-radius: 10px;
+
 }
 
 .dato__ciclo{
     width: 100%;
-    background: white;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+.contenedor__tabla1{
+    margin-top: 30px;
+    width: 80%;
+    /* background-color: red; */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contenedor__tabla2{
+    /* background-color: yellow; */
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+    
+}
+.dato__class{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 110px;
+}
+.dato__titulo-1{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.dato__titulo-2{
+    text-align: center;
+}
+
 .dato__ciclo-tb{
     border-collapse: collapse;
 }
@@ -22,4 +62,30 @@ th,td{
 
 .dato__cursos-matriculado{
     margin-top: 30px;
+    border-collapse: collapse;
+}
+.head_encabezado{
+    background: green;
+    border: none;
+
+}
+.tb__curso-encabezado{
+    background: rgb(123, 123, 231);
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tb__curso-encabezado-2{
+    width: 400px;
+}
+.tb__curso-encabezado-3{
+    width: 150px;
+    
+}
+
+.td__duracion{
+    text-align: center;
+}
+.td__bimestre{
+    text-align: center;
 }
