@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 86, 86);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+h2{
+    text-align: center;
+    color:rgb(211, 35, 35);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor{
+    width: 30%;
+    background: white;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0  2px 4px rgba(0, 0, 0, 0.4);
+    height: 200px;
+    
+
+
+}
+.contenedor__borde{
+    
+    
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.session{
+
+}
+.iniciar{
+
+}
+.usuario{
+    display: flex;
+    
+    height: 40px;
+    align-items: center;
+}
+label{
+    margin-right: 20px;
+}
+.input_1{
+    margin-left: 40px;
+}
+.password{
+    display: flex;
+    height: 40px;
+    
+    
+    align-items: center;
+}
+.btn_submit{
+    cursor: pointer;
+    background: rgb(162, 162, 231);
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    border-color: rgb(190, 87, 87);
+    width: 200px;
+    height: 25px;
+    outline: none;
+    
+}
