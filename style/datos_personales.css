@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_D{
+    width: 80%;
+    background: white;
+    margin: 20px auto;
+}
+.titulo{
+    width: 100%;
+    background: rgb(141, 141, 208)
+}
+.dato__personales{
+    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+th{
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+td{
+    margin-right: 450px;
+    display: inline-block;
+}
