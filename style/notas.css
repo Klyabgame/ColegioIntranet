@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor__notas{
+    width: 70%;
+    background: white;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+.tb__notas{
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+    padding: 20px;
+}
+.tb__nota-final{
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 520px;
+
+}
+.tb__nota-final tr th{
+    background: rgb(142, 142, 245);
+}
+.tb__notas thead{
+    background: rgb(136, 136, 186);
+}
+.td__bimestre-p{
+    text-align: center;
+    background: rgb(198, 165, 165);
+}
+
+

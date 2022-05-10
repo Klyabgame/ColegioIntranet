@@ -19,17 +19,27 @@
     background: rgb(141, 141, 208)
 }
 .dato__personales{
+    margin-top: 5px;
     width: 100%;
     border-collapse: collapse;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+td{
+    
+    margin-right: 230px;
+    display: inline-block;
 }
 th{
     border: 1px solid black;
     border-color: red;
     background: rgb(238, 166, 166);
     
+}
+td,th{
+    padding: 10px;
 }
 
 hr{
@@ -50,11 +60,8 @@ hr{
     
     width: 500px;
     height: 350px;
+    border-radius: 5px;
 
 }
-td{
-    
-    margin-right: 290px;
-    display: inline-block;
-}
+
   
