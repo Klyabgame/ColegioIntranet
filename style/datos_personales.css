@@ -5,26 +5,56 @@
 }
 
 .contenedor_D{
+    padding: 50px;
     width: 80%;
     background: white;
-    margin: 20px auto;
+    margin: 50px auto;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .titulo{
     width: 100%;
+    margin-left: 9px;
     background: rgb(141, 141, 208)
 }
 .dato__personales{
+    width: 100%;
     border-collapse: collapse;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 th{
-    border: none;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    border-color: red;
+    background: rgb(238, 166, 166);
     
 }
+
+hr{
+    color: red;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.foto{
+    margin-top: 40px;
+    /* width: 100%;
+    margin-left: 10px; */
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.foto img{
+    
+    width: 500px;
+    height: 350px;
+
+}
 td{
-    margin-right: 450px;
+    
+    margin-right: 290px;
     display: inline-block;
 }
+  
