@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/matricula_virtual.css">
     <title>Document</title>
 </head>
 
@@ -17,7 +18,7 @@
     <h1>MATRICULA VIRTUAL</h1>
     <div class="contenedor__matricula">
         <h1>lista de alumnos</h1>
-        <form action="">
+        <form action="" class="listar_alumnos">
             <label for="">NIVEL ESTUDIANTIL:</label>
                 <select name="selecciona" class="selecion__nivel">
 
@@ -37,9 +38,9 @@
             </select>
             <label for="">SECCION:</label>
             <input type="text" placeholder="Escriba la seccion ejemplo:'L'">
-            <input type="submit" value="LISTAR ESTUDIANTES">
+            <input type="submit" value="LISTAR ESTUDIANTES" class="btn_listar">
         </form>
-        <table>
+        <table class="tabla__alumnos">
             <thead>
                 <th>N~</th>
                 <th>APELLIDOS</th>
@@ -56,7 +57,7 @@
                 <td>calle campo alegre n 136</td>
                 <td>977152063</td>
                 <td><img src="/img/foto.jpg" alt=""></td>
-                <td><button>EDITAR</button> <button>ELIMINAR</button></td>
+                <td><button class="btn__editar">EDITAR</button> <button class="btn__eliminar">ELIMINAR</button></td>
             </tr>
 
         </table>
@@ -64,6 +65,7 @@
     </div>
     <div class="formulario__registro">
         <div class="formulario">
+            <h2>REGISTRAR NUEVO ALUMNO</h2>
             <form action="">
                 <label for="">DNI:</label>
                 <input type="text">
