@@ -15,6 +15,73 @@
 
     </div>
     <h1>MATRICULA VIRTUAL</h1>
+    <div class="contenedor__matricula">
+        <h1>lista de alumnos</h1>
+        <form action="">
+            <label for="">NIVEL ESTUDIANTIL:</label>
+                <select name="selecciona" class="selecion__nivel">
+
+                    <option>PRIMARIA</option>
+                
+                    <option>SECUNDARIA</option>
+                
+                </select>
+            <label for="">GRADO ACADEMICO:</label>
+            <select name="selecciona" class="selecion__grado">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            
+            </select>
+            <label for="">SECCION:</label>
+            <input type="text" placeholder="Escriba la seccion ejemplo:'L'">
+            <input type="submit" value="LISTAR ESTUDIANTES">
+        </form>
+        <table>
+            <thead>
+                <th>N~</th>
+                <th>APELLIDOS</th>
+                <th>NOMBRES</th>
+                <th>DIRECCION</th>
+                <th>TELEFONO</th>
+                <th>FOTO</th>
+                <th>OPCIONES</th>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>gavino carrera</td>
+                <td>franz schwartz</td>
+                <td>calle campo alegre n 136</td>
+                <td>977152063</td>
+                <td><img src="/img/foto.jpg" alt=""></td>
+                <td><button>EDITAR</button> <button>ELIMINAR</button></td>
+            </tr>
+
+        </table>
+        <input type="submit" value="REGISTRAR NUEVO ESTUDIANTE">
+    </div>
+    <div class="formulario__registro">
+        <div class="formulario">
+            <form action="">
+                <label for="">DNI:</label>
+                <input type="text">
+                <label for="">APELLIDOS:</label>
+                <input type="text">
+                <label for="">NOMBRES:</label>
+                <input type="text">
+                <label for="">DIRECCION</label>
+                <input type="text">
+                <label for="">TELEFONO:</label>
+                <input type="text">
+                <label for="">FOTO:</label>
+                <input type="file">
+
+                <input type="submit" value="REGISTRAR">
+            </form>
+        </div>
+    </div>
 </body>
 <script src="/js/enlacehtml.js"></script>
 
