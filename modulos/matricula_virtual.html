@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/style/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/matricula_virtual.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/> 
     <title>Document</title>
 </head>
 
@@ -50,15 +53,10 @@
                 <th>FOTO</th>
                 <th>OPCIONES</th>
             </thead>
-            <tr>
-                <td>1</td>
-                <td>gavino carrera</td>
-                <td>franz schwartz</td>
-                <td>calle campo alegre n 136</td>
-                <td>977152063</td>
-                <td><img src="/img/foto.jpg" alt=""></td>
-                <td><button class="btn__editar">EDITAR</button> <button class="btn__eliminar">ELIMINAR</button></td>
-            </tr>
+            <tbody>
+                
+            </tbody>
+            
 
         </table>
         <input type="submit" value="REGISTRAR NUEVO ESTUDIANTE">
@@ -66,19 +64,25 @@
     <div class="formulario__registro">
         <div class="formulario">
             <h2>REGISTRAR NUEVO ALUMNO</h2>
-            <form action="">
+            <form action="" id="formulario">
                 <label for="">DNI:</label>
-                <input type="text">
+                <input type="text" id="DNI">
                 <label for="">APELLIDOS:</label>
-                <input type="text">
+                <input type="text" id="APELLIDOS">
                 <label for="">NOMBRES:</label>
-                <input type="text">
+                <input type="text" id="NOMBRES">
                 <label for="">DIRECCION</label>
-                <input type="text">
+                <input type="text" id="DIRECCION">
                 <label for="">TELEFONO:</label>
-                <input type="text">
+                <input type="text" id="TELEFONO">
+                <label for="">CORREO:</label>
+                <input type="text" id="CORREO">
+                <label for="">EDAD:</label>
+                <input type="text" id="EDAD">
                 <label for="">FOTO:</label>
-                <input type="file">
+                <input type="file" id="FOTO">
+                <label for="">ROL:</label>
+                <input type="text" id="ID_ROL">
 
                 <input type="submit" value="REGISTRAR">
             </form>
@@ -86,5 +90,8 @@
     </div>
 </body>
 <script src="/js/enlacehtml.js"></script>
+<script src="/js/matricula_virtual.js"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
 
 </html>
