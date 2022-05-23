@@ -10,7 +10,18 @@ const EDAD= document.getElementById('EDAD');
 const FOTO= document.getElementById('FOTO');
 const ID_ROL= document.getElementById('ID_ROL');
 const formulario=document.getElementById('formulario');
+const formularioRegistro=document.getElementById('formulario__registro');
+const btn_registrar=document.getElementById('btn_registrar');
+const btn_cancelar=document.getElementById('btn_cancelar');
 let resultados='';
+btn_registrar.addEventListener('click',()=>{
+    formularioRegistro.classList.add('formulario__registro-activate');
+    opcion='registrar';
+})
+btn_cancelar.addEventListener('click',()=>{
+    formularioRegistro.classList.remove('formulario__registro-activate');
+})
+
 
 const mostrar=(colegio)=>{
     console.log(colegio)
@@ -56,7 +67,6 @@ const on=(element,event,selector,handler)=>{
 }
 formulario.addEventListener('submit',(e)=>{
     e.preventDefault();
-    opcion='registrar'
     if(opcion=='registrar'){
         fetch(url,{
             method:'POST',

@@ -37,9 +37,19 @@
 
 .formulario__registro{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;  
+    background: rgba(0, 0, 0,0.5);
+}
+.formulario__registro-activate{
+    pointer-events: auto;
+    opacity: 1;
+    transition: 1.5s;
 }
 .formulario{
     background: white;
