@@ -4,17 +4,24 @@ const form=document.getElementById('form');
 const USSER=document.getElementById('USSER');
 const PASSWORD=document.getElementById('PASSWORD');
 
-const on=(element,event,selector,handler)=>{
+/* const on=(element,event,selector,handler)=>{
     element.addEventListener(event,e=>{
         if(e.target.closest(selector)){
             handler(e)
         }
     })
-}
+} */
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     console.log(USSER.value);
     console.log(PASSWORD.value);
+    if(USSER=='' && PASSWORD==''){
+        alert('coloque un usuario y contraseña');
+    }else if(USSER.value=='' ){
+        alert('campos vacios, por favor coloque un usuario');
+    }else if(PASSWORD.value==''){
+        alert('campos vacios, por favor coloque una contraseña');
+    }else{
         fetch(url,{
             method:'POST',
             headers:{
@@ -27,9 +34,11 @@ form.addEventListener('submit',(e)=>{
             })   
         })
         .then(response=> response.json())
-        .then(data=>console.log(data))
+        .then(response=>console.log(response))
         /* .then(window.location='/index.html') */
-        console.log("se realizo la conexion");
+    }
+        
         
 
 })
+
