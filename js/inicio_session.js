@@ -22,19 +22,29 @@ form.addEventListener('submit',(e)=>{
     }else if(PASSWORD.value==''){
         alert('campos vacios, por favor coloque una contraseña');
     }else{
-        fetch(url,{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json'
-            },
-            body: JSON.stringify({
-                USSER:USSER.value,
-                PASSWORD:PASSWORD.value
-                
-            })   
-        })
-        .then(response=> response.json())
-        .then(response=>console.log(response))
+        
+            fetch(url,{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body: JSON.stringify({
+                    USSER:USSER.value,
+                    PASSWORD:PASSWORD.value
+                    
+                })   
+            })
+            .then(response=> response.json())
+            .then((response)=>{
+                let array=response[0];
+                if(array.USSER==USSER.value || array.PASSWORD==PASSWORD.value){
+                    alert("felicidades ingresaste al sistema");
+                    window.location='/index.html';
+                }
+        
+            })
+            .catch(()=>alert("Usuario o password incorrectos!"));
+        
         /* .then(window.location='/index.html') */
     }
         
