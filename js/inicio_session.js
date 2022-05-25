@@ -39,7 +39,7 @@ form.addEventListener('submit',(e)=>{
                 let array=response[0];
                 if(array.USSER==USSER.value || array.PASSWORD==PASSWORD.value){
                     alert("felicidades ingresaste al sistema");
-                    window.location='/index.html';
+                    window.location='/modulos/index/contentBase.html';
                 }
         
             })
