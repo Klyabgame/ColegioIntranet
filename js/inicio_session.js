@@ -3,14 +3,14 @@ const submit=document.getElementById('iniciando');
 const form=document.getElementById('form');
 const USSER=document.getElementById('USSER');
 const PASSWORD=document.getElementById('PASSWORD');
+const nombre_session=document.getElementById('name');
+const contenedor_nombre=document.getElementById('profile');
 
-/* const on=(element,event,selector,handler)=>{
-    element.addEventListener(event,e=>{
-        if(e.target.closest(selector)){
-            handler(e)
-        }
-    })
-} */
+
+/* const usuario=USSER.value;
+console.log(usuario); */
+
+
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     console.log(USSER.value);
@@ -40,6 +40,25 @@ form.addEventListener('submit',(e)=>{
                 if(array.USSER==USSER.value || array.PASSWORD==PASSWORD.value){
                     alert("felicidades ingresaste al sistema");
                     window.location='/modulos/index/contentBase.html';
+                    fetch(url+'klyab')
+                        .then(response => response.json())
+                        .then(data=>
+                            {
+                                mostrando(data)
+                            })
+                        .catch(error=> console.log(error))
+
+
+                    const mostrando=(authmostrar)=>{
+                            console.log(authmostrar)
+                            let body='';
+                            for(let i=0; i<authmostrar.length; i++){
+                                body +=`<span><a href="/modulos/index/contentBase.html">${authmostrar[i].NOMBRES},
+                                 ${authmostrar[i].APELLIDOS}</a></span>`
+                                
+                            }
+                        }
+                        
                 }
         
             })
@@ -51,4 +70,5 @@ form.addEventListener('submit',(e)=>{
         
 
 })
+
 
