@@ -10,16 +10,34 @@ const EDAD= document.getElementById('EDAD');
 const FOTO= document.getElementById('FOTO');
 const ID_ROL= document.getElementById('ID_ROL');
 const formulario=document.getElementById('formulario');
-const formularioRegistro=document.getElementById('formulario__registro');
+const formularioRegistro=document.querySelector('.formulario__registro');
 const btn_registrar=document.getElementById('btn_registrar');
-const btn_cancelar=document.getElementById('btn_cancelar');
+const btn_cancelar=document.getElementById('btn_cerrar');
+const registro_estudiantes=document.getElementById('registro_estudiantes');
+const btn__editar=document.getElementsByClassName('btn__editar');
 let resultados='';
+var opcion='';
 btn_registrar.addEventListener('click',()=>{
     formularioRegistro.classList.add('formulario__registro-activate');
-    opcion='registrar';
+        DNI.value='';
+        APELLIDOS.value='';
+        NOMBRES.value='';
+        DIRECCION.value='';
+        TELEFONO.value='';
+        CORREO.value='';
+        EDAD.value='';
+        FOTO.value='';
+        ID_ROL.value='';
+        opcion='registrar';
+    
 })
+
+/* registro_estudiantes.addEventListener('click',()=>{
+    formularioRegistro.classList.remove('formulario__registro-activate');
+}) */
 btn_cancelar.addEventListener('click',()=>{
     formularioRegistro.classList.remove('formulario__registro-activate');
+    opcion='cancelar'
 })
 
 
@@ -86,7 +104,10 @@ formulario.addEventListener('submit',(e)=>{
             })
             
         })
-        .then(response=>response.json());
+        .then(response=>response.json())
+        .then(()=>location.reload());
+        formularioRegistro.classList.remove('formulario__registro-activate');
+
     }
     if(opcion=='editar'){
         fetch(url+idForm,{
@@ -106,7 +127,11 @@ formulario.addEventListener('submit',(e)=>{
                 ID_ROL:ID_ROL.value
             })   
         })
-        .then(response=> response.json());
+        .then(response=> response.json())
+        .then(()=>location.reload());
+    }
+    if(opcion=='cancelar'){
+
     }
     
     /* .then(data=>{
@@ -149,6 +174,7 @@ on(document,'click','.btn__eliminar',e=>{
 let idForm=0;
 on(document,'click','.btn__editar',e=>{
     /* console.log('BORRADO') */
+    formularioRegistro.classList.add('formulario__registro-activate');
     const fila=e.target.parentNode.parentNode;
     idForm=fila.children[0].innerHTML;
     
@@ -164,8 +190,6 @@ on(document,'click','.btn__editar',e=>{
     TELEFONO.value=telefono;
     FOTO.value=foto;
     opcion='editar';
-
-    
     
 })
 

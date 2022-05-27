@@ -1,4 +1,4 @@
-const url='http://localhost:3000/api/session/auth';
+const urlsesion='http://localhost:3000/api/session/auth';
 const submit=document.getElementById('iniciando');
 const form=document.getElementById('form');
 const USSER=document.getElementById('USSER');
@@ -6,9 +6,28 @@ const PASSWORD=document.getElementById('PASSWORD');
 const nombre_session=document.getElementById('name');
 const contenedor_nombre=document.getElementById('profile');
 
-
+function obtenerDatosStorage(){
+    let usser=localStorage.getItem("array.USSER");
+    return usser;
+}
 /* const usuario=USSER.value;
 console.log(usuario); */
+const mostrando=(authmostrar)=>{
+    let body='';
+    for(let i=0; i<authmostrar.length; i++){
+        body +=`<span style="text-transform: uppercase;"><a href="/modulos/index/contentBase.html">${authmostrar[i].APELLIDOS},
+         ${authmostrar[i].NOMBRES}</a></span>`
+        
+    }
+    nombre_session.innerHTML=body;
+
+}
+fetch(urlsesion+'/'+obtenerDatosStorage())
+                        .then(response => response.json())
+                        .then(data=>{
+                            mostrando(data);
+                        })
+                        .catch(error=> console.log(error))
 
 
 form.addEventListener('submit',(e)=>{
@@ -23,7 +42,7 @@ form.addEventListener('submit',(e)=>{
         alert('campos vacios, por favor coloque una contraseña');
     }else{
         
-            fetch(url,{
+            fetch(urlsesion,{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -40,25 +59,8 @@ form.addEventListener('submit',(e)=>{
                 if(array.USSER==USSER.value || array.PASSWORD==PASSWORD.value){
                     alert("felicidades ingresaste al sistema");
                     window.location='/modulos/index/contentBase.html';
-                    fetch(url+'klyab')
-                        .then(response => response.json())
-                        .then(data=>
-                            {
-                                mostrando(data)
-                            })
-                        .catch(error=> console.log(error))
-
-
-                    const mostrando=(authmostrar)=>{
-                            console.log(authmostrar)
-                            let body='';
-                            for(let i=0; i<authmostrar.length; i++){
-                                body +=`<span><a href="/modulos/index/contentBase.html">${authmostrar[i].NOMBRES},
-                                 ${authmostrar[i].APELLIDOS}</a></span>`
-                                
-                            }
-                        }
-                        
+                    localStorage.setItem("array.USSER",array.USSER);
+                            
                 }
         
             })
