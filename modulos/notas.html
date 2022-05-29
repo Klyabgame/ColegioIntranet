@@ -18,6 +18,11 @@
     
     <div class="contenedor__notas">
         <h1>NOTAS</h1>
+        <form action="" class="form_notas">
+            <label for="">DNI:</label>
+            <input class="texto_dni" id="texto-dni" type="text" placeholder="Coloque su dni">
+            <input class="submit_notas" type="submit" value="Buscar cursos">
+        </form>
         <table class="tb__notas">
             <thead>
                 <th class="tb__curso-encabezado tb__curso-encabezado-1">CODIGO</th>
@@ -27,48 +32,57 @@
                 <th class="tb__curso-encabezado tb__curso-encabezado-5">3°B</th>
                 <th class="tb__curso-encabezado tb__curso-encabezado-6">4°B</th>
                 <th class="tb__curso-encabezado tb__curso-encabezado-7">PROMEDIO</th>
+                <th class="tb__curso-encabezado tb__curso-encabezado-8">OPCIONES</th>
                 
             </thead>
-            <tr class="curso__tr">
-                <td>001</td>
-                <td>MATEMATICA</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre-p">16</td>
-                
-            </tr>
-            <tr class="curso__tr">
-                <td>002</td>
-                <td>RELIGION</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre-p">16</td>
-                
-            </tr>
-            <tr class="curso__tr">
-                <td>003</td>
-                <td>COMUNICACION</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre-p">16</td>
-                
-            </tr>
-            <tr class="curso__tr">
-                <td>004</td>
-                <td>EDUACION FISICA</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre">16</td>
-                <td class="td__bimestre-p">16</td>
-                
-            </tr>
+            <tbody id="curso__tr-t">
+                <!-- <tr class="curso__tr" id="curso__tr">
+                    <td>001</td>
+                    <td>MATEMATICA</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre-p">16</td>
+                    <td id="asignar_notas"><button id="btn_notas">ASIGNAR NOTAS</button></td>
+                    
+                </tr>
+                <tr class="curso__tr">
+                    <td>002</td>
+                    <td>RELIGION</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre-p">16</td>
+                    <td id="asignar_notas"><button id="btn_notas">ASIGNAR NOTAS</button></td>
+                    
+                    
+                </tr>
+                <tr class="curso__tr">
+                    <td>003</td>
+                    <td>COMUNICACION</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre-p">16</td>
+                    <td id="asignar_notas"><button id="btn_notas">ASIGNAR NOTAS</button></td>
+                    
+                </tr>
+                <tr class="curso__tr">
+                    <td>004</td>
+                    <td>EDUACION FISICA</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre">16</td>
+                    <td class="td__bimestre-p">16</td>
+                    <td id="asignar_notas"><button id="btn_notas">ASIGNAR NOTAS</button></td>
+                    
+                </tr> -->
+            </tbody>
+            
         </table>
         <table class="tb__nota-final">
             <tr>
@@ -77,7 +91,24 @@
             </tr>
         </table>
     </div>
+    <div class="editar_notas">
+        <form action="" class="form__editar-notas" id="form_editar-notas">
+            <h2>ASIGNAR NOTAS</h2>
+            <label for="">CURSO</label>
+            <input type="text" value="">
+            <label for="">1° BIMESTRE</label>
+            <input type="text" value="">
+            <label for="">2° BIMESTRE</label>
+            <input type="text" value="">
+            <label for="">3° BIMESTRE</label>
+            <input type="text" value="">
+            <label for="">4° BIMESTRE</label>
+            <input type="text" value="">
+            <input class="btn_editar_notas" type="submit" value="Asignar">
+        </form>
+    </div>
 </body>
 <script src="/js/enlacehtml.js"></script>
+<script src="/js/notas.js"></script>
 
 </html>

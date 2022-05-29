@@ -20,25 +20,27 @@
         <div class="dato__ciclo">
             <div class="contenedor__tabla1">
                 <h2 class="dato__titulo-1">Datos Academicos</h2>
-            <table class="dato__class">
+            <table class="dato__class" id="tabla_class">
                 <tr class="head">
-                    <th class="head_encabezado">ALUMNO :</th>
-                    <td>GAVINO CARRERA FRANZ SCHWARTZ</td>
+                    <th class="head_encabezado">DNI :</th>
+                    <td class="td__dni"><form id="curso__formulario" class="curso__formulario" action="">
+                        <input id="curso__dni" class="curso__formulario-text " type="text" placeholder="escribir DNI de Alumno"> 
+                        <input class="curso__formulario-submit" type="submit" value="Buscar Alumno"></form></td>
                 </tr>
-                <tr>
-                    <th class="head_encabezado">NIVEL ACADEMICO:</th>
-                    <td>SECUNDARIA</td>
+                <tr >
+                    <th class="head_encabezado">ALUMNO:</th>
+                    <td id="tr_alumno"></td>
                 </tr>
-                <tr>
+                <tr >
                     <th class="head_encabezado">GRADO ACADEMICO:</th>
-                    <td>5</td>
+                    <td id="tr_grado"></td>
                 </tr>
             </table>
             </div>
             
             <div class="contenedor__tabla2">
                 <h2 class="dato__titulo-2">CURSOS MATRICULADOS</h2>
-            <table class="dato__cursos-matriculado">
+            <table class="dato__cursos-matriculado" id="dato__curso_tabla">
                 <thead>
                     <th class="tb__curso-encabezado tb__curso-encabezado-1">CODIGO</th>
                     <th class="tb__curso-encabezado tb__curso-encabezado-2">CURSO</th>
@@ -46,7 +48,13 @@
                     <th class="tb__curso-encabezado tb__curso-encabezado-4">N° BIMESTRE</th>
                     
                 </thead>
-                <tr class="curso__tr">
+
+                <tbody id="body_cursos">
+
+                </tbody>
+
+                
+                <!-- <tr class="curso__tr">
                     <td>001</td>
                     <td>MATEMATICA</td>
                     <td class="td__duracion">2 MESES</td>
@@ -73,7 +81,7 @@
                     <td class="td__duracion">2 MESES</td>
                     <td class="td__bimestre">1</td>
                     
-                </tr>
+                </tr> -->
             </table>
             </div>
             
@@ -84,5 +92,6 @@
     </div>
 </body>
 <script src="/js/enlacehtml.js"></script>
+<script src="/js/curso.js"></script>
 
 </html>

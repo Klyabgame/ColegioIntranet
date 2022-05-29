@@ -18,7 +18,7 @@
     height: 40px;
     border-radius: 5px;
     border: 1px solid rgb(137, 134, 134);
-    background: white;
+    background: rgba(146, 116, 116, 0.877);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -29,8 +29,23 @@
 .listar_alumnos label{
     margin-left: 20px;
 }
+.seccion{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
 .btn_listar{
     margin-left: 20px;
+    background: rgb(150, 72, 72);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.btn_listar:hover{
+    background: rgb(148, 50, 50);
 }
 
 /*FORMULARIO REGISTRO*/
@@ -144,4 +159,17 @@ td{
 .tabla__alumnos thead th{
     background: rgb(103, 98, 98);
     color: white;
+}
+.btn_registrar{
+    background: rgb(176, 176, 212);
+    height: 40px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+.btn_registrar:hover{
+    background:rgb(115, 115, 207) ;
 }

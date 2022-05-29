@@ -42,5 +42,75 @@ th,td{
     text-align: center;
     background: rgb(198, 165, 165);
 }
+#btn_notas{
+    background: rgb(142, 192, 142);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn_notas:hover{
+    background: rgb(91, 194, 91);
+    color: white;
+}
+.form_notas{
+
+}
+.texto_dni{
+    border: 0.5px solid rgb(223, 156, 156);
+    height: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    
+}
+.submit_notas{
+    background: rgb(117, 212, 117);
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.editar_notas{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.editar_notas-activate{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.form__editar-notas{
+    background: white;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.btn_editar_notas{
+    background: rgb(74, 74, 158);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+}
 
 

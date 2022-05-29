@@ -55,6 +55,33 @@
 .dato__ciclo-tb{
     border-collapse: collapse;
 }
+.td__dni{
+    height: 40px;
+}
+/* .curso__formulario{
+    background: blue;
+
+} */
+.curso__formulario-text{
+    margin-left: 10px;
+    width: 50%;
+    border: 1px solid green;
+    padding: 2px;
+    border-radius: 2px;
+    outline: none;
+}
+.curso__formulario-submit{
+    margin-left: 10px;
+    background: rgb(115, 172, 115);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+.curso__formulario-submit:hover{
+    background: rgb(69, 179, 69);
+}
 th,td{
     border: solid 1px black;
     padding: 0;
