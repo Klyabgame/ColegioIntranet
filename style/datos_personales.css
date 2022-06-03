@@ -3,34 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .contenedor_D{
-    padding: 50px;
-    width: 80%;
-    background: white;
-    margin: 50px auto;
-    height: 700px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-.titulo{
     width: 100%;
-    margin-left: 9px;
-    background: rgb(141, 141, 208)
-}
-.dato__personales{
-    margin-top: 5px;
-    width: 100%;
-    border-collapse: collapse;
+    height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     
 }
-td{
+.contenedor-de-tabla{
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dato__personales{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
     
-    margin-right: 230px;
-    display: inline-block;
+}
+.titulo{
+    width: 100%;
+   text-align: center;
+   background: red;
+   border-radius: 10px  10px 0 0;
+   padding: 5px;
+}
+.c-tabla{
+    width: 100%;
+    display: flex;
+}
+td{
+    text-transform: uppercase;
 }
 th{
     border: 1px solid black;
@@ -39,7 +57,7 @@ th{
     
 }
 td,th{
-    padding: 10px;
+    padding: 20px;
 }
 
 hr{
@@ -48,20 +66,53 @@ hr{
     margin-top: 20px;
 }
 .foto{
-    margin-top: 40px;
-    /* width: 100%;
-    margin-left: 10px; */
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
     
+
     
 }
 .foto img{
-    
-    width: 500px;
-    height: 350px;
-    border-radius: 5px;
+    width: 400px;
 
+}
+
+@media (width<1400px) {
+    .c-tabla{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .dato__personales{
+        width: 80%;
+        margin-left: 200px;
+    }
+}
+@media (width<1200px) {
+    .dato__personales{
+        font-size: 14px;
+        margin-right: 80px;
+    }
+}
+@media (width<1000px) {
+    .dato__personales{
+        font-size: 12px;
+        margin-right: 160px;
+    }
+}
+@media (width<800px) {
+    .dato__personales{
+        font-size: 10px;
+        margin-right: 200px;
+    }
+    .foto img{
+        width: 200px;
+    
+    }
 }
 
   
